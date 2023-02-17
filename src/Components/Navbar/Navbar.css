@@ -1,0 +1,57 @@
+.navbarElements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.brandImage{
+    height: 4.6rem;
+    margin-left: 4rem;
+    display: block;
+}
+.navbarSearch{
+    width: 30rem;
+    background: 0 0;
+    border: none;
+    font-family: inherit;
+    font-size: 1.7rem;
+}
+.Search{
+    background-color: #fff;
+    border-radius: 10rem;
+    align-items: center;
+    padding-left: 3rem;
+    transition: all .3s;
+    display: flex;
+}
+.Search button{
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right,#fbdb89,#f48982);
+    border: none;
+    border-radius: 10rem;
+    align-items: center;
+    transition: all .2s;
+    font-size: 1.7rem;
+    padding: 10px;
+}
+.nav__btn {
+    height: 2.4rem;
+    width: 2.4rem;
+    fill: #f38e82;
+    margin-right: 0.7rem;
+    transform: translateY(-1px);
+}
+.Links div{
+    display: flex;
+    align-items: center;
+
+}
+.Links span{
+    font-size: 20px;
+    color: #f38e82;
+}
+.navbarSearch:focus-visible{
+    outline: none;
+}

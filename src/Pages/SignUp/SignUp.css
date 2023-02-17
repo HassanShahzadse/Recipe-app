@@ -1,0 +1,48 @@
+.SignUp{
+    background-image: linear-gradient(to bottom right,#fbdb89,#f48982);
+    min-height: calc(100vh);
+    display: flex;
+    justify-content: center;
+}
+.formSignup{
+    width: 40%;
+    background-color: white;
+    height: 500px;
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   display: flex;
+   justify-content: center;
+   padding: 30px;
+}
+.InputfieldsSignup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form-control{
+    margin: 15px 0px;
+    font-size: 20px;
+    padding: 10px;
+}
+.InputfieldsSignup button{
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom right,#fbdb89,#f48982);
+    border: none;
+    border-radius: 10rem;
+    align-items: center;
+    transition: all .2s;
+    font-size: 1.7rem;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+.InputfieldsSignup span{
+    font-family: inherit;
+    font-size: 3.7rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}

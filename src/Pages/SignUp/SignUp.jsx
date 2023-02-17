@@ -2,7 +2,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
 import app from "../../Firebase/firebase";
-
+import './SignUp.css'
 
 const auth = getAuth(app);
 const initialValues = {
@@ -41,39 +41,33 @@ const SignUp = () => {
       .required(),
   });
   return (
+    <div className="SignUp">
+      <div className="formSignup">
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
       onSubmit={onSubmit}
     >
-      <Form>
-        <div>
-          <label htmlFor="firstname">Name</label>
-          <Field type="text" id="firstName" name="fname" />
+      <Form className="InputfieldsSignup">
+      <span>Sign Up</span>
+          <Field placeholder="Enter Name" type="text" id="firstName" name="fname" className="form-control"/>
           <ErrorMessage name="fname" />
-        </div>
-
-        <div>
-          <label htmlFor="emailAddress">Email </label>
-          <Field type="text" id="emailAddress" name="emailaddress" />
+ 
+          <Field placeholder="Enter E-Mail" type="text" id="emailAddress" name="emailaddress" className="form-control"/>
           <ErrorMessage name="emailaddress" />
-        </div>
-        <br></br>
-        <div>
-          <label htmlFor="password">Password</label>
-          <Field type="text" id="password" name="pass" />
+
+          <Field placeholder="Enter Password" type="text" id="password" name="pass" className="form-control"/>
           <ErrorMessage name="pass" />
-        </div>
-        <div>
-          <label htmlFor="confirmpass">Confirm Password </label>
-          <Field type="text" id="confirmpass" name="confirmpass" />
+
+          <Field placeholder="Confirm Password" type="text" id="confirmpass" name="confirmpass" className="form-control"/>
           <ErrorMessage name="confirmpass" />
-        </div>
-        <br></br>
+
 
         <button type="submit">Sign Up</button>
       </Form>
     </Formik>
+    </div>
+    </div>
   );
 };
 export default SignUp;

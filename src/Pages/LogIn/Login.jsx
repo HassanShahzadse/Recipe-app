@@ -45,8 +45,8 @@ const Login = () => {
         onSubmit={onSubmit}
       >
         <div className="login">
-          <div className="form">
-            <Form>
+          <div className="form"> 
+            <Form className="Inputfields">
               <span>Login</span>
               <Field
                 type="email"

@@ -22,4 +22,6 @@ export const addRecipe = (recipe, newRecipe) => {
     `https://forkify-api.herokuapp.com/api/v2/recipes?search=${recipe}&key=${apiKey}`,
     newRecipe
   );
+
+  return response.status;
 };

@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { getRecipes } from "../../Utils/backendServices";
-
+import Recipe from "../Recipe/Recipe";
 const RecipeList = () => {
-  const [recipe, setRecipes] = useState();
+  const [recipeList, setRecipes] = useState();
 
   useEffect(() => {
     const getRecipe = async () => {
@@ -15,11 +15,13 @@ const RecipeList = () => {
       //console.log(recipe[0]);
     };
     getRecipe();
-  }, []);
+  },[]);
 
   return (
    <div>
-
+    { recipeList && (
+    <Recipe> recipeList={recipeList}</Recipe>
+)}
    </div>
   );
 };

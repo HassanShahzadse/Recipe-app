@@ -1,4 +1,3 @@
-
 import "./App.css";
 import AddRecipe from "./Components/AddRecipe";
 import Home from "./Pages/Home";
@@ -12,6 +11,7 @@ function App() {
       {/* <AllRoutes /> */}
       <AddRecipe/>
 
+      <AllRoutes />
     </div>
   );
 }

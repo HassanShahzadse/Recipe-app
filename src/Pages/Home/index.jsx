@@ -1,13 +1,13 @@
-import Navbar from '../../Components/Navbar';
-import './Home.css'
-const Home=()=>{
-    return(
-        <div className="mainContainer">
-            <div className="mainCard">
-                <Navbar/>
+import Navbar from "../../Components/Navbar";
+import "./Home.css";
+const Home = () => {
+  return (
+    <div className="mainContainer">
+      <div className="mainCard">
+        <Navbar />
         <h1>Home Page</h1>
-        </div>
-        </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
 export default Home;

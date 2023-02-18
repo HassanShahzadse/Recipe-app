@@ -1,5 +1,5 @@
 import Navbar from "../../Components/Navbar";
-import RecipeDetail from '../../Components/RecipeDetails';
+import RecipeDetail from "../../Components/RecipeDetails";
 import "./Home.css";
 const Home = () => {
   return (
@@ -7,8 +7,9 @@ const Home = () => {
       <div className="mainCard">
         <Navbar />
         <h1>Home Page</h1>
-        <div><RecipeDetail/></div>
-        
+        <div>
+          <RecipeDetail />
+        </div>
       </div>
     </div>
   );

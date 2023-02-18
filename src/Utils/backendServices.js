@@ -12,6 +12,7 @@ export const getRecipeDetails = (searchedRecipeId) => {
   let response = axios.get(
     `https://forkify-api.herokuapp.com/api/v2/recipes/${searchedRecipeId}`
   );
+  console.log(response.data)
   return response;
 };
 

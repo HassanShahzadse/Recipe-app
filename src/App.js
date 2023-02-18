@@ -1,3 +1,4 @@
+
 import "./App.css";
 import Home from "./Pages/Home";
 import Login from "./Pages/LogIn/Login";
@@ -7,7 +8,7 @@ function App() {
   return (
     <div className="App">
 
-      <AllRoutes />
+      <AllRoutes /
 
     </div>
   );

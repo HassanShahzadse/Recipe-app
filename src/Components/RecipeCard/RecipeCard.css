@@ -1,0 +1,17 @@
+.recipe-detail{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .recipe-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .recipe-image {
+    margin-right: 10px; 
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  

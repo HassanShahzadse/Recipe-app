@@ -4,8 +4,6 @@ import "./AddRecipe.css";
 import { faClose } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const AddRecipe = () => {
-  // const auth = getAuth()
-
   const initialValues = {
     title: "",
     url: "",
@@ -34,20 +32,6 @@ const AddRecipe = () => {
 
   const onSubmit = (values) => {
     console.log("DATA", values);
-
-    //   signInWithEmailAndPassword(auth, values.email, values.password)
-    //     .then((userCredential) => {
-
-    //       const user = userCredential.user;
-    //       localStorage.setItem("token", user.accessToken);
-    //       console.log(user);
-    //     })
-    //     .catch((error) => {
-    //       const errorCode = error.code;
-    //       const errorMessage = error.message;
-    //       alert(errorCode);
-    //       alert(errorMessage);
-    //     });
   };
 
   return (

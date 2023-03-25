@@ -1,14 +1,16 @@
 import Navbar from "../../Components/Navbar";
 import RecipeDetail from "../../Components/RecipeDetails";
+import RecipeList from "../../Components/RecipeList/RecipeList";
 import "./Home.css";
 const Home = () => {
   return (
     <div className="mainContainer">
       <div className="mainCard">
         <Navbar />
-        <h1>Home Page</h1>
+     
         <div>
-          <RecipeDetail />
+<RecipeList/>
+          {/* <RecipeDetail /> */}
         </div>
       </div>
     </div>

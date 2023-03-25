@@ -14,6 +14,9 @@ const Navbar = () => {
     console.log(event.target.value);
     setSearchQuery(event.target.value);
   };
+  const changeBookmarkHandler =() =>{
+    console.log("HELLO");
+  }
   return (
     <div className="Navbar">
       <div className="navbarElements">
@@ -49,10 +52,12 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <span>
-              <FontAwesomeIcon icon={faBookmark} />
-            </span>
-            <p>BOOKMARKS</p>
+            <button onClick={changeBookmarkHandler}>
+              <span>
+                <FontAwesomeIcon icon={faBookmark} />
+              </span>
+              <p>BOOKMARKS</p>
+            </button>
           </div>
         </div>
       </div>

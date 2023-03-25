@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
 const Recipe = (props) => {
-    console.log("RECIPES",props.recipeList)
-    return (
+  console.log("RECIPES", props.recipeList);
+  return (
+    <Link to={`/recipeDetails/${props.recipeList.id}`}>
       <div className="main-container">
         <div className="recipe-detail">
-          <div >
+          <div>
             <img className="recipe-image" src={props.recipeList.image_url} />
           </div>
           <div className="recipe-info">
@@ -12,8 +14,8 @@ const Recipe = (props) => {
           </div>
         </div>
       </div>
-    )
-  }
-  
-  export default Recipe;
-  
+    </Link>
+  );
+};
+
+export default Recipe;

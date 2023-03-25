@@ -1,8 +1,9 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import "./AddRecipe.css";
-import { faClose } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClose } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 const AddRecipe = () => {
   const initialValues = {
     title: "",
@@ -44,7 +45,9 @@ const AddRecipe = () => {
         {() => (
           <Form>
             <div className="AllFields">
-            <FontAwesomeIcon icon={faClose} className="CloseBtn"/>
+              <Link to={"/home"}>
+                <FontAwesomeIcon icon={faClose} className="CloseBtn" />
+              </Link>
               <div className="RecipeData">
                 <h1 className="HeadingRecipe">Recipe Data</h1>
                 <label htmlFor="title">Title</label>
@@ -66,7 +69,7 @@ const AddRecipe = () => {
                 <Field name="servings" type="number" placeholder="23" />
               </div>
               <div className="Ingred">
-              <h1 className="HeadingRecipe">Ingredients</h1>
+                <h1 className="HeadingRecipe">Ingredients</h1>
                 <label htmlFor="ingredients1">Ingredient 1</label>
                 <Field name="ingredients1" placeholder="0.5,kg,Rice" />
 
@@ -95,11 +98,12 @@ const AddRecipe = () => {
                 />
               </div>
             </div>
-            <button type="submit" className="Upload">Upload (Disabled)</button>
+            <button type="submit" className="Upload">
+              Upload (Disabled)
+            </button>
           </Form>
         )}
       </Formik>
-   
     </div>
   );
 };

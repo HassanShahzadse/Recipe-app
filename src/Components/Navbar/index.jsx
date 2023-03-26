@@ -8,15 +8,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import RecipeList from "../RecipeList/RecipeList";
 import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const handleSearchInputChange = (event) => {
-    console.log(event.target.value);
     setSearchQuery(event.target.value);
   };
-  const changeBookmarkHandler =() =>{
-    console.log("HELLO");
-  }
+  const changeBookmarkHandler = () => {};
   return (
     <div className="Navbar">
       <div className="navbarElements">
@@ -52,12 +50,14 @@ const Navbar = () => {
             </Link>
           </div>
           <div>
-            <button onClick={changeBookmarkHandler}>
-              <span>
-                <FontAwesomeIcon icon={faBookmark} />
-              </span>
-              <p>BOOKMARKS</p>
-            </button>
+            <Link to={"/bookmarks"}>
+              <button onClick={changeBookmarkHandler}>
+                <span>
+                  <FontAwesomeIcon icon={faBookmark} />
+                </span>
+                <p>BOOKMARKS</p>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

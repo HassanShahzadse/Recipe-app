@@ -1,12 +1,17 @@
-import { useSelector, useDispatch } from "react-redux";
-
+import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
+import Recipe from "../RecipeCard/RecipeCard";
 const Bookmark = () => {
-  let bookmarks = useSelector((state) => state.Bookmark.bookmarkedRecipes);
-  console.log(bookmarks);
+  let bookmarks = useSelector((state) => state.bookmark.bookmarkedRecipes);
   return (
     <div>
+      <Link to={"/home"}>home</Link>
       {bookmarks.map((recipe) => {
-        return <p>bookmark</p>;
+        return (
+          <div key={recipe.id}>
+            <Recipe recipeList={recipe} />
+          </div>
+        );
       })}
     </div>
   );

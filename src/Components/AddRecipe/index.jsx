@@ -1,9 +1,10 @@
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
 import "./AddRecipe.css";
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import { addRecipe } from "../../Utils/backendServices";
 const AddRecipe = () => {
   const initialValues = {
     title: "",
@@ -31,8 +32,8 @@ const AddRecipe = () => {
     ),
   });
 
-  const onSubmit = (values) => {
-    console.log("DATA", values);
+  const onSubmit = async (values) => {
+    return await addRecipe(values.category, values);
   };
 
   return (
@@ -52,6 +53,9 @@ const AddRecipe = () => {
                 <h1 className="HeadingRecipe">Recipe Data</h1>
                 <label htmlFor="title">Title</label>
                 <Field name="title" placeholder="TEST23" />
+
+                <label htmlFor="category">Category</label>
+                <Field name="category" placeholder="TEST23" />
 
                 <label htmlFor="url">URL</label>
                 <Field name="url" placeholder="TEST23" />

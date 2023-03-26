@@ -1,6 +1,6 @@
 import { BookmarkActions } from "../Reducers/bookmarkReducer";
 
-export const AddBookmark = (initialBookmarks = [], newBookmark) => {
+export const AddBookmark = (newBookmark) => {
   return (dispatch) => {
     dispatch(
       BookmarkActions.bookmarkRecipe({

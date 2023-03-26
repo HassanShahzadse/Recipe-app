@@ -1,71 +1,59 @@
-# Getting Started with Create React App
+# React Food Recipes Web Application
+This project is a react food recipes application, built using ReactJS, and Node.js. The application aims to replicate some of the core functionalities of the official forkify app, including the ability to browse and search for recipes and add recipes and bookmark the recipes.. The project also features responsive design for web and mobile devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Table of Content:
+- Installation
+- Usage
+- Contributions
+- Features
+- Technologies Used
+- API Integration
+- Project Architecture
+- Jira Board and Sprints
+- Conclusion 
 
-## Available Scripts
 
-In the project directory, you can run:
+# Installation:
+To install the project, follow these steps:
+- Clone repository: `https://github.com/Knowledge-Streams-KS/react-recipes-app-teamshehreen.git`
+- Install dependencies: npm i or npm install
 
-### `npm start`
+# Usage:
+- To use the project, run npm start to start the development server. The app will open in your default browser at `http://localhost:3000/`.
+- To build the project for production, run npm run build. The compiled code will be output to the build/ directory.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Contributions:
+The contributions were made by using the following steps:
+- Create a new branch: `get checkout -b feature/name/featureName`
+- Make the changes and commit them: `git commit -m "implemented feature/name/featureName"`
+- Push the branch: ` git push origin feature/name/featureName`
+- Merge the branch with development: ` git merge develop`
+- Create a new pull request.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Features:
+- Browse and search for recipes.
+- Add recipes.
+- Bookmark your favourite recipes.
+- Responsive design for web and mobile devices.
 
-### `npm test`
+# Technologies Used
+- ReactJS
+- Node.js
+- Forkify Web API
+- Axios
+- React Router
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# API Integration
+The application integrates with the Forkify Web API to fetch recipes and their details, as well as user data such as bookmarked recipes.
 
-### `npm run build`
+# Project Architecture
+The project follows a component-based architecture, with each component responsible for a specific feature or UI element. The main components of the application are:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- App - the root component that sets up routing.
+- Browse - the component responsible for rendering the browse page, which displays recipes based on user search queries.
+- Add Recipes - the component responsible for rendering the recipe page, which displays user-added recipes.
+- Bookmark - the component responsible for rendering the bookmarked recipes, which allows users to show saved recipes.
+ 
+# Conclsuion
+Overall, the React Food Recipes Web Application is a well-designed and functional project that showcases the power of ReactJS and Node.js in building responsive web applications. The application replicates some of the core features of the official forkify app, including the ability to browse and search for recipes, add recipes, and bookmark recipes. The integration with the Forkify Web API allows users to access a vast library of recipes and their details, as well as user data such as bookmarked recipes. The project follows a component-based architecture, with each component responsible for a specific feature or UI element. With its responsive design, the application is accessible on both web and mobile devices. Overall, this project demonstrates the potential of ReactJS and Node.js in building powerful and user-friendly web applications.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-recipes-app-teamshehreen

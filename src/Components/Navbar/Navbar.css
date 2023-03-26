@@ -55,3 +55,11 @@
 .navbarSearch:focus-visible{
     outline: none;
 }
+.Links  a,.Links  button{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: black;
+   border: none;
+   background-color: #f9f5f3;
+}

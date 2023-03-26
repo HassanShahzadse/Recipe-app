@@ -4,7 +4,7 @@ html {
 }
 .mainContainer{
     color: #615551;
-    min-height: calc(100vh - 8vw);
+    min-height: 100vh;
     background-image: linear-gradient(to bottom right,#fbdb89,#f48982);
     background-repeat: no-repeat;
     background-size: cover;

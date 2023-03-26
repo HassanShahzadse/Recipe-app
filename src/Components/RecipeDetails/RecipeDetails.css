@@ -1,11 +1,33 @@
+.recipeDetails1{
+    background-image: linear-gradient(to bottom right,#fbdb89,#f48982);
+    padding: 30px;
+}
 .recipeDetails{
+    border-radius: 10px;
     background-color: white;
+    
+    
 }
 .heroSection img{
     object-fit: cover;
     display: block;
     width: 100%;
-    height: 256px;
+    height: 356px;
+    margin-top: 0px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.recipeDetails1 a{
+    display: flex;
+    text-decoration: none;
+    font-size: 2.45rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    align-items: center;
+    transform: translate(20px, 50px);
+    align-content: center;
+    
 }
 
 .recipe__title{
@@ -127,3 +149,6 @@
 .directions a{
     text-decoration: none;
 }
+.fabackwords{
+    color: white;
+   }

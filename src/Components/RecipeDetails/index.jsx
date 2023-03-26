@@ -5,7 +5,8 @@ import {
   faBookmark,
   faPeopleGroup,
   faCheck,
-} from "@fortawesome/free-solid-svg-icons";
+  faBackward
+} from "@fortawesome/free-solid-svg-icons"; 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./RecipeDetails.css";
 import { useParams } from "react-router-dom";
@@ -27,8 +28,9 @@ const RecipeDetails = () => {
   }
 
   return (
+    <div className="recipeDetails1">
+      <Link to={"/home"}><FontAwesomeIcon icon={faBackward} className="fa fabackwords" />home</Link>
     <div className="recipeDetails">
-      <Link to={"/home"}>home</Link>
       <div className="heroSection">
         <img src={recipeDetails.image_url} alt={recipeDetails.title}></img>
         <h2 className="recipe__title">
@@ -70,6 +72,7 @@ const RecipeDetails = () => {
           <button>DIRECTIONS</button>
         </a>
       </div>
+    </div>
     </div>
   );
 };

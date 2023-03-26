@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
+import "./RecipeCard.css"
 const Recipe = (props) => {
   console.log("RECIPES", props.recipeList);
-  return (
+  return ( 
+    <div className="main-container">
     <Link to={`/recipeDetails/${props.recipeList.id}`}>
       <div className="main-container">
         <div className="recipe-detail">
@@ -15,6 +17,7 @@ const Recipe = (props) => {
         </div>
       </div>
     </Link>
+    </div>
   );
 };
 

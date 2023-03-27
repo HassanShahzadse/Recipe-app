@@ -11,15 +11,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./RecipeDetails.css";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { AddBookmark } from "../../Store/Actions/bookmarkActions";
 
 const RecipeDetails = () => {
   const [recipeDetails, setRecipeDetails] = useState(null);
   const { id } = useParams();
   const dispatch = useDispatch();
-  let bookmarks = useSelector((state) => state.bookmark.bookmarkedRecipes);
-  let alreadyBookmarked = bookmarks.filter((recipe) => recipe.id === id); // disable bookmark button if this is not null or undefined
+  const [alreadyMarked, setAlreadyMarked] = useState(false);
 
   useEffect(() => {
     const fetchRecipeDetails = async () => {
@@ -31,6 +30,7 @@ const RecipeDetails = () => {
 
   const clickHandler = () => {
     dispatch(AddBookmark(recipeDetails));
+    setAlreadyMarked(true);
   };
 
   if (!recipeDetails) {
@@ -63,9 +63,15 @@ const RecipeDetails = () => {
             <p>Servings: {recipeDetails.servings} </p>
           </div>
           <div className="Detailsicon">
-            <button onClick={clickHandler}>
-              <FontAwesomeIcon icon={faBookmark} className="fa faBookmark" />
-            </button>
+            {alreadyMarked ? (
+              <button disabled>
+                <FontAwesomeIcon icon={faBookmark} className="fa faBookmark" />
+              </button>
+            ) : (
+              <button onClick={clickHandler}>
+                <FontAwesomeIcon icon={faBookmark} className="fa faBookmark" />
+              </button>
+            )}
           </div>
         </div>
         <div className="ingredients">

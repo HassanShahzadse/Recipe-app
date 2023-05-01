@@ -1,71 +1,40 @@
-# Getting Started with Create React App
+# Recipe App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a recipe app that allows users to search, bookmark, and add new recipes. The app uses the Spoonacular API to search for recipes and store the bookmarked recipes in the browser's local storage.
 
-## Available Scripts
+## Features
+- Search for recipes using the forkify API
+- Bookmark recipes to save them for later viewing
+- Add new recipes to the app by filling out a form
 
-In the project directory, you can run:
+## Installation
+1. Clone the repository
+```
+git clone https://github.com/HassanShahzadse/recipe-app.git
+```
 
-### `npm start`
+2. Install dependencies
+```
+npm install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Start the app
+```
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+1. Search for recipes by typing in the input field and clicking the "Search" button.
+2. View the search results on the page.
+3. Click on a recipe to view the recipe details such as the title, ingredients, and instructions.
+4. Bookmark a recipe by clicking the "Bookmark" button. The bookmarked recipes will be stored in the browser's local storage and can be viewed on the "Bookmarks" page.
+5. Add a new recipe to the app by clicking the "Add Recipe" button and filling out the form. The new recipe will be added to the app and can be searched for and viewed by other users.
 
-### `npm test`
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## License
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# react-recipes-app-teamshehreen
+## Credits
+This app was created by Hassan Shahzad/Shehreen/Asfa using the forkify API.
